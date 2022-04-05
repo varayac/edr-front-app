@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 // imports components
 import NavBar from './layouts/NavBar'
 import Home from './components/Home'
@@ -14,11 +14,13 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<NavBar />}>
-            <Route path='Home' element={<Home />} />
+            <Route index='Home' element={<Home />} />
             <Route path='Users' element={<Users />} />
             <Route path='Products' element={<Products />} />
             <Route path='Purchases' element={<Purchases />} />
             <Route path='Sales' element={<Sales />} />
+
+            <Route path='*' element={<Navigate replace to={'/'} />} />
           </Route>
         </Routes>
       </BrowserRouter>

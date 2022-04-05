@@ -1,10 +1,11 @@
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import { Outlet, Link } from 'react-router-dom'
+import css from './NavBar.module.css'
 
 function NavBar() {
   return (
     <>
-      <Navbar className='navBg' bg='dark' variant='dark' expand='lg'>
+      <Navbar className={css.navBg} variant='dark' expand='lg'>
         <Container>
           <Navbar.Brand as={Link} to={'/'}>
             React-Bootstrap
@@ -21,7 +22,7 @@ function NavBar() {
               <Nav.Link as={Link} to={'/sales'}>
                 Sales
               </Nav.Link>
-              <Nav.Link as={Link} to={'/productos'}>
+              <Nav.Link as={Link} to={'/products'}>
                 Products
               </Nav.Link>
               <Nav.Link as={Link} to={'/purchases'}>
@@ -32,7 +33,7 @@ function NavBar() {
         </Container>
       </Navbar>
 
-      <section>
+      <section className={css.section}>
         <Outlet></Outlet>
       </section>
     </>

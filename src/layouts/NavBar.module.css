@@ -1,0 +1,18 @@
+/*
+Paleta de colores:
+#222831
+#393E46
+#FFD369
+#EEEEEE
+*/
+
+.section {
+    color: #EEEEEE;
+    background-color: #393E46;
+    height: 100vh;
+}
+
+.navBg {
+    background-color: #222831;
+    
+}
