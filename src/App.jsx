@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 // imports components
 import NavBar from './layouts/NavBar'
 import Home from './components/Home'
-import Users from './components/UsersList'
+import Clients from './components/Clients'
 import Products from './components/Products'
 import Purchases from './components/Purchases'
 import Sales from './components/Sales'
+import NewClient from './components/NewClient'
+import EditClient from './components/EditClient'
 
 function App() {
   return (
@@ -14,11 +16,13 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<NavBar />}>
-            <Route index='Home' element={<Home />} />
-            <Route path='Users' element={<Users />} />
-            <Route path='Products' element={<Products />} />
-            <Route path='Purchases' element={<Purchases />} />
-            <Route path='Sales' element={<Sales />} />
+            <Route index='home' element={<Home />} />
+            <Route path='clients' element={<Clients />} />
+            <Route path='newClient' element={<NewClient />} />
+            <Route path='editClient/:id' element={<EditClient />} />
+            <Route path='products' element={<Products />} />
+            <Route path='purchases' element={<Purchases />} />
+            <Route path='sales' element={<Sales />} />
 
             <Route path='*' element={<Navigate replace to={'/'} />} />
           </Route>

@@ -8,7 +8,7 @@ function NavBar() {
       <Navbar className={css.navBg} variant='dark' expand='lg'>
         <Container>
           <Navbar.Brand as={Link} to={'/'}>
-            React-Bootstrap
+            <i className='fa-solid fa-building'></i> The Office
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
@@ -16,8 +16,8 @@ function NavBar() {
               <Nav.Link as={Link} to={'/'}>
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to={'/users'}>
-                Users
+              <Nav.Link as={Link} to={'/clients'}>
+                Clients
               </Nav.Link>
               <Nav.Link as={Link} to={'/sales'}>
                 Sales
