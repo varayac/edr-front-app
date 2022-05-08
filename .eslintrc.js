@@ -25,5 +25,6 @@ module.exports = {
   rules: {
     'no-unused-vars': 'warn',
     'import/no-absolute-path': 'warn',
+    'react/prop-types': 'off',
   },
 }

@@ -16,7 +16,7 @@ function Clients() {
     const res = await axios.get(URI)
     setClients(res.data)
   }
-  console.log()
+
   // Procedure for delete one client
   const deleteClient = async id => {
     await axios.delete(`${URI}${id}`)

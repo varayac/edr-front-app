@@ -1,19 +1,20 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { useState } from 'react'
+import ModalCreate from './ModalCreate'
 
 function Products() {
-  const API = 'http://localhost:8000/products/1'
-  const [rut, setRut] = useState([])
+  const [show, setShow] = useState(false)
 
-  useEffect(() => {
-    axios.get(API).then(res => {
-      setRut(res.data.code)
-    })
-  }, [])
+  const handleClose = () => setShow(false)
+  const handleOpen = () => setShow(true)
+
   return (
     <div>
       <h2>Products</h2>
-      <p>{rut}</p>
+      <button className='btn btn-success' onClick={handleOpen}>
+        Modal Create
+      </button>
+
+      <ModalCreate show={show} onHide={handleClose} />
     </div>
   )
 }
