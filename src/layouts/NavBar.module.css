@@ -7,12 +7,11 @@ Paleta de colores:
 */
 
 .section {
-    color: #EEEEEE;
-    background-color: #393E46;
-    height: 100vh;
+  color: #eeeeee;
+  background-color: #393e46;
+  height: 100vh;
 }
 
 .navBg {
-    background-color: #222831;
-    
+  background-color: #222831;
 }

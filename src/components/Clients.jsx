@@ -5,19 +5,18 @@ import { useState, useEffect } from 'react'
 const URI = 'http://localhost:8000/clients/'
 
 function Clients() {
-  // Hooks
+  // Show all clients
   const [clients, setClients] = useState([])
   useEffect(() => {
     getClients()
   }, [])
 
-  // Procedure for show all clients
   const getClients = async () => {
     const res = await axios.get(URI)
     setClients(res.data)
   }
 
-  // Procedure for delete one client
+  // Delete client
   const deleteClient = async id => {
     await axios.delete(`${URI}${id}`)
     getClients()
