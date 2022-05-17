@@ -10,7 +10,7 @@ function NewClient() {
   const [direction, setDirection] = useState('')
   const navigate = useNavigate()
 
-  // Procedimiento Guardar
+  // POST Clients
   const clientsParams = async e => {
     e.preventDefault()
     await axios.post(URI, { rut: rut, name: name, direction: direction })

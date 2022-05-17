@@ -33,10 +33,14 @@ function Products() {
       <div>
         <h2>Products</h2>
         <button className='btn btn-success' onClick={handleOpen}>
-          Modal New Products
+          <i className='fa-solid fa-file-circle-plus'></i> New Product
         </button>
 
-        <ModalCreate show={show} onHide={handleClose} />
+        <ModalCreate
+          title={'Add New Product'}
+          show={show}
+          onHide={handleClose}
+        />
       </div>
 
       <div>
@@ -44,8 +48,9 @@ function Products() {
         <div className='container'>
           <div className='row'>
             <div className='col'>
-              <Link to={'/newClient'} className='btn btn-primary mt-2 mb-2'>
-                <i className='fa-solid fa-file-circle-plus'></i> New Client
+              <Link to={'/newProduct'} className='btn btn-primary mt-2 mb-2'>
+                <i className='fa-solid fa-file-circle-plus'></i> New Product in
+                Page
               </Link>
               <table className='table table-dark'>
                 <thead className='table-primary'>

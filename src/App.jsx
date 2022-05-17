@@ -9,6 +9,7 @@ import Purchases from './components/Purchases'
 import Sales from './components/Sales'
 import NewClient from './components/NewClient'
 import EditClient from './components/EditClient'
+import NewProduct from './components/NewProduct'
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
             <Route path='products' element={<Products />} />
             <Route path='purchases' element={<Purchases />} />
             <Route path='sales' element={<Sales />} />
-
+            <Route path='newProduct' element={<NewProduct />} />
             <Route path='*' element={<Navigate replace to={'/'} />} />
           </Route>
         </Routes>
