@@ -32,26 +32,28 @@ function Products() {
     <>
       <div>
         <h2>Products</h2>
-        <button className='btn btn-success' onClick={handleOpen}>
-          <i className='fa-solid fa-file-circle-plus'></i> New Product
-        </button>
-
-        <ModalCreate
-          title={'Add New Product'}
-          show={show}
-          onHide={handleClose}
-        />
-      </div>
-
-      <div>
-        <h2>Products</h2>
         <div className='container'>
           <div className='row'>
             <div className='col'>
-              <Link to={'/newProduct'} className='btn btn-primary mt-2 mb-2'>
+              {/* BUTTON MODAL */}
+              <button
+                className='btn btn-success mt-2 mb-2'
+                onClick={handleOpen}
+              >
+                <i className='fa-solid fa-file-circle-plus'></i> New Product
+              </button>
+              {/* MODAL */}
+              <div>
+                <ModalCreate
+                  title={'Add New Product'}
+                  show={show}
+                  onHide={handleClose}
+                />
+              </div>
+              {/* <Link to={'/newProduct'} className='btn btn-primary mt-2 mb-2'>
                 <i className='fa-solid fa-file-circle-plus'></i> New Product in
                 Page
-              </Link>
+              </Link> */}
               <table className='table table-dark'>
                 <thead className='table-primary'>
                   <tr>

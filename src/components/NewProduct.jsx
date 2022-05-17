@@ -5,13 +5,13 @@ import { useNavigate } from 'react-router-dom'
 const URI = 'http://localhost:8000/products/'
 
 function NewPruduct() {
-  // Hook useState
+  // Hook useState inputs
   const [code, setCode] = useState('')
   const [name, setName] = useState('')
   const [price, setPrice] = useState('')
   const [amount, setAmount] = useState('')
   const [status, setStatus] = useState('')
-  // Esta wea no la entiendo aún xD
+  // Esta wea aún no la entiendo, queda pendiente xD
   const navigate = useNavigate()
 
   // POST products
