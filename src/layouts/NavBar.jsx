@@ -19,11 +19,14 @@ function NavBar() {
               <Nav.Link as={Link} to={'/clients'}>
                 Clients
               </Nav.Link>
-              <Nav.Link as={Link} to={'/sales'}>
-                Sales
+              <Nav.Link as={Link} to={'/providers'}>
+                Providers
               </Nav.Link>
               <Nav.Link as={Link} to={'/products'}>
                 Products
+              </Nav.Link>
+              <Nav.Link as={Link} to={'/sales'}>
+                Sales
               </Nav.Link>
               <Nav.Link as={Link} to={'/purchases'}>
                 Purchases

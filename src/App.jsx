@@ -7,6 +7,7 @@ import Clients from './components/Clients'
 import Products from './components/Products'
 import Purchases from './components/Purchases'
 import Sales from './components/Sales'
+import Providers from './components/Providers'
 // Controllers
 import NewClient from './components/NewClient'
 import EditClient from './components/EditClient'
@@ -23,6 +24,7 @@ function App() {
             <Route path='clients' element={<Clients />} />
             <Route path='newClient' element={<NewClient />} />
             <Route path='editClient/:id' element={<EditClient />} />
+            <Route path='providers' element={<Providers />} />
             <Route path='products' element={<Products />} />
             <Route path='newProduct' element={<NewProduct />} />
             <Route path='editProduct/:id' element={<EditProduct />} />
