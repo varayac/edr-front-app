@@ -8,8 +8,8 @@ function EditClient() {
   const [rut, setRut] = useState('')
   const [name, setName] = useState('')
   const [direction, setDirection] = useState('')
+  // Router
   const navigate = useNavigate()
-  // usamos el registro mediante el ID
   const { id } = useParams()
 
   // Procedure for update
