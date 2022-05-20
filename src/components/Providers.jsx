@@ -8,6 +8,7 @@ const URI = 'http://localhost:8000/providers/'
 function Providers() {
   const [providers, setProviders] = useState([])
 
+  // Print Providers
   useEffect(() => {
     getProviders()
   }, [])
@@ -39,7 +40,7 @@ function Providers() {
             <th>COMPANY NAME</th>
             <th>DIRECTION</th>
             <th>CREATED AT</th>
-            <th>UPDATE AT</th>
+            <th>UPDATED AT</th>
             <th>ACTIONS</th>
           </tr>
         </thead>
