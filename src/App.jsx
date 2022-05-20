@@ -14,6 +14,7 @@ import NewClient from './components/NewClient'
 import EditClient from './components/EditClient'
 import NewProduct from './components/NewProduct'
 import EditProduct from './components/EditProduct'
+import EditProvider from './components/EditProvider'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path='editClient/:id' element={<EditClient />} />
             <Route path='providers' element={<Providers />} />
             <Route path='newProvider' element={<NewProvider />} />
+            <Route path='editProvider/:id' element={<EditProvider />} />
             <Route path='products' element={<Products />} />
             <Route path='newProduct' element={<NewProduct />} />
             <Route path='editProduct/:id' element={<EditProduct />} />

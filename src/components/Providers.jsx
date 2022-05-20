@@ -10,7 +10,7 @@ function Providers() {
 
   useEffect(() => {
     getProviders()
-  })
+  }, [])
 
   // Get Providers
   const getProviders = async () => {
