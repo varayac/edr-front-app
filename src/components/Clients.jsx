@@ -5,12 +5,13 @@ import { useState, useEffect } from 'react'
 const URI = 'http://localhost:8000/clients/'
 
 function Clients() {
-  // Show all clients
   const [clients, setClients] = useState([])
+
   useEffect(() => {
     getClients()
   }, [])
 
+  // Get Clients
   const getClients = async () => {
     const res = await axios.get(URI)
     setClients(res.data)

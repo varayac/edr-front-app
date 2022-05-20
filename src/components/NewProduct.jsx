@@ -1,4 +1,4 @@
-import { Form, Button } from 'react-bootstrap'
+import { Form, Button, Container } from 'react-bootstrap'
 import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -28,7 +28,7 @@ function NewProduct() {
   }
 
   return (
-    <div className='container'>
+    <Container>
       <Form onSubmit={productsParams}>
         <Form.Group className='mb-3' controlId='formName'>
           <Form.Label>Product name</Form.Label>
@@ -86,7 +86,7 @@ function NewProduct() {
           Add Product
         </Button>
       </Form>
-    </div>
+    </Container>
   )
 }
 

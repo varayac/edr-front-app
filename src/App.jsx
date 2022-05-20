@@ -8,6 +8,7 @@ import Products from './components/Products'
 import Purchases from './components/Purchases'
 import Sales from './components/Sales'
 import Providers from './components/Providers'
+import NewProvider from './components/NewProvider'
 // Controllers
 import NewClient from './components/NewClient'
 import EditClient from './components/EditClient'
@@ -25,6 +26,7 @@ function App() {
             <Route path='newClient' element={<NewClient />} />
             <Route path='editClient/:id' element={<EditClient />} />
             <Route path='providers' element={<Providers />} />
+            <Route path='newProvider' element={<NewProvider />} />
             <Route path='products' element={<Products />} />
             <Route path='newProduct' element={<NewProduct />} />
             <Route path='editProduct/:id' element={<EditProduct />} />
